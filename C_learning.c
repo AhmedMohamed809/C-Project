@@ -17,10 +17,23 @@ scanf("%s",&name);
 printf(" \n How old are you :");
 scanf("%d",&age);
 printf("\nyour name is %s  and your are %d years old " ,name, age);
-if ( age >=18){
-    printf("\nyou are singin now !");
-}else{
-    printf("\nYou under 18 !! Sorry We can't singup!!");
+switch (age)
+{
+case 20:
+    printf("\nyou are the best");
+    break;
+    case 0:
+    printf("\nyou ardenot born !");
+    break;
+
+default:
+printf("\nenter vaild age ");
+    break;
 }
+// if ( age >=18){
+//     printf("\nyou are singin now !");
+// }else{
+//     printf("\nYou under 18 !! Sorry We can't singup!!");
+// }
     return 0;
 }
