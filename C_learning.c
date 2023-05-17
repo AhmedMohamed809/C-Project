@@ -16,7 +16,11 @@ printf(" \n what is your name  :");
 scanf("%s",&name);
 printf(" \n How old are you :");
 scanf("%d",&age);
-printf("your name is %s  and your are %d years old " ,name, age);
-
+printf("\nyour name is %s  and your are %d years old " ,name, age);
+if ( age >=18){
+    printf("\nyou are singin now !");
+}else{
+    printf("\nYou under 18 !! Sorry We can't singup!!");
+}
     return 0;
 }
