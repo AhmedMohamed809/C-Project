@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-int square(int); // function prototypes 
+// int square(int); // function prototypes 
 
-void birtday(char name[]){
-    for (int  i = 0; i < 10; i++)
-    {
-        /* code */
-    printf("\n Happy birthday %s  %d",name , i );
-    }
+// void birtday(char name[]){
+//     for (int  i = 0; i < 10; i++)
+//     {
+//         /* code */
+//     printf("\n Happy birthday %s  %d",name , i );
+//     }
     
 
-}
+// }
 
 int main(){
 //     int age=10; 
@@ -49,21 +49,35 @@ int main(){
 //     printf("\nYou under 18 !! Sorry We can't singup!!");
 // }
 //####################
-bool sun = true;
+// bool sun = true;
+// char name[25];
+// printf("Enter your name : ");
+// scanf("%s",&name);
+// strupr(name);
+// int result = strlen(name);
+// printf("this is lenght of name is : %d", result);
+// birtday(name);
+// (!sun) ?  printf("\n it's sunny outside ")  : printf("\n it's cloud outside") ;
+// int x = square(2);
+// printf("This is Square %d", x);
 char name[25];
-printf("Enter your name : ");
-scanf("%s",&name);
-strupr(name);
-int result = strlen(name);
-printf("this is lenght of name is : %d", result);
-birtday(name);
-(!sun) ?  printf("\n it's sunny outside ")  : printf("\n it's cloud outside") ;
-int x = square(2);
-printf("This is Square %d", x);
+printf("\n Enter your name : ");
+fgets(name,25,stdin);
+// name[strlen(name)-1]='\0';
+int r = strlen(name)-1;
+while (r==0)
+{
+  printf("\n You didn't enter your name  ");
+  printf("\n Enter your name : ");
+  fgets(name,25,stdin);
+//   name[strlen(name)-1]='\0';
+r = strlen(name)-1;
+}
+printf("\nYour name is %s ",name);
 
     return 0;
 }
 
-int square(int x){
-    return x*x;
-}
+// int square(int x){
+//     return x*x;
+// }
