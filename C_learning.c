@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 int square(int); // function prototypes 
 
 void birtday(char name[]){
+    for (int  i = 0; i < 10; i++)
+    {
+        /* code */
+    printf("\n Happy birthday %s  %d",name , i );
+    }
     
-    printf("\n Happy birthday %s",name);
 
 }
 
@@ -48,6 +53,9 @@ bool sun = true;
 char name[25];
 printf("Enter your name : ");
 scanf("%s",&name);
+strupr(name);
+int result = strlen(name);
+printf("this is lenght of name is : %d", result);
 birtday(name);
 (!sun) ?  printf("\n it's sunny outside ")  : printf("\n it's cloud outside") ;
 int x = square(2);
