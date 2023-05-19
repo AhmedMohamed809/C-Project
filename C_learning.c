@@ -61,18 +61,17 @@ int main(){
 // int x = square(2);
 // printf("This is Square %d", x);
 char name[25];
-printf("\n Enter your name : ");
-fgets(name,25,stdin);
+// printf("\n Enter your name : ");
+// fgets(name,25,stdin);
 // name[strlen(name)-1]='\0';
 int r = strlen(name)-1;
-while (r==0)
+do
 {
-  printf("\n You didn't enter your name  ");
   printf("\n Enter your name : ");
   fgets(name,25,stdin);
 //   name[strlen(name)-1]='\0';
 r = strlen(name)-1;
-}
+}while (r==0);
 printf("\nYour name is %s ",name);
 
     return 0;
