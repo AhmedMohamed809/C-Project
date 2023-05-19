@@ -1,5 +1,13 @@
 #include <stdio.h>
 #include <stdbool.h>
+int square(int); // function prototypes 
+
+void birtday(char name[]){
+    
+    printf("\n Happy birthday %s",name);
+
+}
+
 int main(){
 //     int age=10; 
 //     char gander = 'M';
@@ -37,16 +45,17 @@ int main(){
 // }
 //####################
 bool sun = true;
-if (!sun){
-    printf("\n it's sunny outside ");
-}else {
-    printf("\n it's cloud outside");
-}
-birtday();
-birtday();
+char name[25];
+printf("Enter your name : ");
+scanf("%s",&name);
+birtday(name);
+(!sun) ?  printf("\n it's sunny outside ")  : printf("\n it's cloud outside") ;
+int x = square(2);
+printf("This is Square %d", x);
+
     return 0;
 }
 
-void birtday(){
-    printf("\n Happy birthday");
+int square(int x){
+    return x*x;
 }
