@@ -60,19 +60,34 @@ int main(){
 // (!sun) ?  printf("\n it's sunny outside ")  : printf("\n it's cloud outside") ;
 // int x = square(2);
 // printf("This is Square %d", x);
-char name[25];
+// int numbers[] = {50,20,5,59};
+// char names[][10]={"Ahmed","Alaa","hala"}; 
+char x[15] = "Whater";
+char y[15]= "soda";
+char temp[15];
+strcpy(temp,x);
+strcpy(x,y);
+strcpy(y,temp);
+printf("X = %s\n",x);
+printf("Y = %s",y);
+// strcpy(names[0],"Hashim");
+// for (int i = 0; i < sizeof(names)/sizeof(names[0]); i++)
+// {
+// printf("%s\n", names[i]);
+// }
+
 // printf("\n Enter your name : ");
 // fgets(name,25,stdin);
 // name[strlen(name)-1]='\0';
-int r = strlen(name)-1;
-do
-{
-  printf("\n Enter your name : ");
-  fgets(name,25,stdin);
+// int r = strlen(name)-1;
+// do
+// {
+//   printf("\n Enter your name : ");
+//   fgets(name,25,stdin);
 //   name[strlen(name)-1]='\0';
-r = strlen(name)-1;
-}while (r==0);
-printf("\nYour name is %s ",name);
+// r = strlen(name)-1;
+// }while (r==0);
+// printf("\nYour name is %s ",name);
 
     return 0;
 }
