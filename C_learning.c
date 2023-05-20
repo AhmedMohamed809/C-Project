@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+struct Pl
+{
+    char name[15];
+    int age;
+    /* data */
+};
+
 // int square(int); // function prototypes 
 
 // void birtday(char name[]){
@@ -62,14 +69,14 @@ int main(){
 // printf("This is Square %d", x);
 // int numbers[] = {50,20,5,59};
 // char names[][10]={"Ahmed","Alaa","hala"}; 
-char x[15] = "Whater";
-char y[15]= "soda";
-char temp[15];
-strcpy(temp,x);
-strcpy(x,y);
-strcpy(y,temp);
-printf("X = %s\n",x);
-printf("Y = %s",y);
+// char x[15] = "Whater";
+// char y[15]= "soda";
+// char temp[15];
+// strcpy(temp,x);
+// strcpy(x,y);
+// strcpy(y,temp);
+// printf("X = %s\n",x);
+// printf("Y = %s",y);
 // strcpy(names[0],"Hashim");
 // for (int i = 0; i < sizeof(names)/sizeof(names[0]); i++)
 // {
@@ -88,6 +95,12 @@ printf("Y = %s",y);
 // r = strlen(name)-1;
 // }while (r==0);
 // printf("\nYour name is %s ",name);
+struct Pl pl1;
+strcpy(pl1.name,"bro");
+pl1.age=20;
+printf("%s\n ",pl1.name);
+printf("%d\n ",pl1.age);
+
 
     return 0;
 }
